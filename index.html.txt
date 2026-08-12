@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Drunken Bunny To IP Master</title>
+    <style>
+        /* Dark Eastern Crypto Aesthetic */
+        body {
+            background-color: #0b0d10;
+            color: #f0f4f8;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        h1 { color: #bd53ed; font-size: 3rem; margin-bottom: 5px; font-weight: 900; letter-spacing: 2px; }
+        .ticker { color: #ffb703; font-size: 1.4rem; font-weight: bold; margin-bottom: 40px; letter-spacing: 3px; }
+        
+        /* Layout Sections */
+        .story-section {
+            background: #16121e;
+            border: 2px solid #3c2657;
+            border-radius: 16px;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            padding: 35px;
+            text-align: left;
+            box-shadow: 0 0 30px rgba(189, 83, 237, 0.1);
+        }
+        .story-section h2 {
+            color: #ffb703;
+            margin-top: 0;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #3c2657;
+            padding-bottom: 10px;
+        }
+        .story-section h3 {
+            color: #bd53ed;
+            font-size: 1.2rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        .story-section p {
+            color: #d1c7bd;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        /* The Real Life Spark Highlight Box */
+        .viral-spark {
+            background: rgba(255, 183, 3, 0.1);
+            border-left: 4px solid #ffb703;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-bottom: 35px;
+            font-style: italic;
+        }
+
+        /* Meme Gallery Layout */
+        .gallery-title { color: #ffffff; font-size: 1.8rem; margin-top: 30px; margin-bottom: 20px; text-align: center; }
+        .meme-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto 35px auto;
+        }
+        .meme-card {
+            background: #161b22;
+            border: 2px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .meme-card:hover {
+            transform: scale(1.04);
+            border-color: #bd53ed;
+        }
+        .meme-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* DAO Checklist Board */
+        .dao-board {
+            background: #231932;
+            border: 1px dashed #ffb703;
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .dao-board ul { list-style: none; padding: 0; margin: 0; }
+        .dao-board li { font-size: 1.1rem; color: #fff; margin: 8px 0; font-weight: bold;}
+
+        /* Official Classroom Roster Grid */
+        .disciples-title { color: #ffffff; font-size: 2rem; margin-top: 40px; margin-bottom: 20px; }
+        .disciples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+        }
+        .disciple-card {
+            background: #1c1924;
+            border: 1px solid #3c2657;
+            border-radius: 12px;
+            padding: 20px;
+            transition: border-color 0.2s;
+        }
+        .disciple-card:hover {
+            border-color: #ffb703;
+        }
+        .disciple-card h4 { color: #ffb703; margin: 0 0 5px 0; font-size: 1.2rem; }
+        .disciple-card p { color: #8b949e; margin: 0; font-size: 0.95rem; font-style: italic; }
+
+        /* Lightbox Overlay */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            box-shadow: 0 0 25px rgba(189, 83, 237, 0.5);
+        }
+
+        /* Funny Disclaimer Footer */
+        .fermental-advice {
+            margin-top: 60px;
+            color: #ffb703;
+            font-weight: bold;
+            font-style: italic;
+            border-top: 1px solid #30363d;
+            padding-top: 20px;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Title Banner -->
+    <h1>FROM DRUNKEN BUNNY TO IP MASTER</h1>
+    <div class="ticker">$GRAPE - UNLOCK THE DAO OF IP</div>
+
+    <!-- MAIN INTERACTIVE SECTION -->
+    <div class="story-section">
+        <h2>The Legend of the Grape Pit</h2>
+        
+        <!-- The Real Life Incident Callout -->
+        <div class="viral-spark">
+            "A bunny in China allegedly snuck into the grape-fermenting pit and got very drunk..." This wasn't just a news headline. This was the catalyst for a blockchain revolution.
+        </div>
+
+        <!-- NEW PLACEMENT: GALLERY RIGHT AFTER THE LEGEND INTRODUCTION -->
+        <h3 class="gallery-title">The Meme Vault</h3>
+        <div class="meme-grid">
+            <!-- IMAGE 1: Passed-out Bunny Image -->
+            <div class="meme-card" onclick="openMe(this)">
+                <img src="https://i.postimg.cc/T3MMqDh9/1000062723.jpg" alt="The Viral Incident">
+            </div>
+
+            <!-- IMAGE 2: Classroom Image -->
+            <div class="meme-card" onclick="openMe(this)">
+                <img src="https://i.postimg.cc/25HCwSPM/Designer-(2).jpg" alt="The Master's Classroom">
+            </div>
+
+            <!-- IMAGE 3: Martial Arts Poster -->
+            <div class="meme-card" onclick="openMe(this)">
+                <img src="https://i.postimg.cc/dtdtYvyH/Designer.png" alt="From Drunken Bunny To IP Master">
+            </div>
+        </div>
+
+        <!-- STORY CONTINUES WITH CHAPTER 1 -->
+        <h3>Chapter 1: The Accidental Fermentation</h3>
+        <p>
+            Deep within the ancient mountains of China, a simple bunny was foraging near a secret vineyard. Misjudging his leap, he tumbled directly into a massive, hidden stone pit overflowing with fermenting grapes. He didn't just survive—he got completely, historically, gloriously drunk. Passed out flat on his back, his heavy eyes and grape-stained belly became legendary.
+        </p>
+        
+        <h3>Chapter 2: Awakening the IP Karma</h3>
+        <p>
+            As the celestial sugars and fermented juices soaked into his fur during his long slumber, something snapped in his matrix. The Drunken Bunny absorbed the raw energy of the vine, unlocking the forbidden <strong>DAO of IP</strong>. Emerging from the pit with chaotic martial styles, he became the legendary <strong>IP Master</strong>, wielding unstoppable Meme Energy.
+        </p>
+
+        <h3>The Ancient Code: The DAO of IP</h3>
+        <div class="dao-board">
+            <ul>
+                <li>✓ DRINK the juice of wisdom</li>
+                <li>✓ FERMENT the community culture</li>
+                <li>✓ CREATE absolute chaos</li>
+                <li>✓ OWN your license & identity</li>
+                <li>✓ EARN your place in the matrix</li>
+                <li>✓ REPEAT the cycle</li>
+            </ul>
+        </div>
+        
+        <h3>Chapter 3: The Master's Classroom</h3>
+        <p>
+            His legendary power spread across the global realms, drawing the greatest minds of cinema, martial arts, and crypto alchemy to his barrel. Taking his place at the head of the classroom, the IP Master now spends his days drinking the juice of wisdom, dropping knowledge, and instructing his high-profile disciples on the art of moving global markets.
+        </p>
+    </div>
+
+    <!-- OFFICIAL ROSTER SECTIONS -->
+    <h2 class="disciples-title">Official Master's Roster</h2>
+    <div class="disciples-grid">
+        <div class="disciple-card">
+            <h4>JACKIE CHAN</h4>
+            <p>The Movie Star</p>
+        </div>
+        <div class="disciple-card">
+            <h4>DONNIE YEN</h4>
+            <p>The IP Man Star</p>
+        </div>
+        <div class="disciple-card">
+            <h4>CZ CRYPTO</h4>
+            <p>Binance Guy</p>
+        </div>
+    </div>
+
+    <!-- Fullscreen Lightbox Box -->
+    <div id="box" class="lightbox" onclick="this.style.display='none'">
+        <img id="boxImg" src="" alt="Fullscreen View">
+    </div>
+
+    <!-- Direct Quote Footer From Your Image -->
+    <div class="fermental-advice">
+        NOT FINANCIAL ADVICE.<br>JUST FERMENTAL ADVICE.
+    </div>
+
+    <script>
+        function openMe(card) {
+            var imgSrc = card.querySelector('img').src;
+            document.getElementById('boxImg').src = imgSrc;
+            document.getElementById('box').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
